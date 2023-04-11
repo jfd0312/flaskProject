@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<!-- We have two variables with info: infoA, and infoB -->
+<p>{{ infoA }}</p> <!--call varialbes by their name in render_templates -->
+<p>{{ infoB }}</p>
+
+<div style = "text-align: center;">
+    <img src = '\static\flower.jpg'> </img> <!--windows needs backslash(\) for paths-->
+    <p>{{poem}}</p>
+</div>
+
+
+<div class = "contnent">
+    {% for content in infoB %}
+    <P>{content}</P>
+    {% endfor %}
+</div>
